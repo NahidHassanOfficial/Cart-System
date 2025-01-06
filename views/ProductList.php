@@ -116,16 +116,24 @@ $(document).ready(function() {
             "name": name,
             "price": Number(price),
             variantId,
-            variantName
+            variantName,
+            "quantity": 1
         };
 
         //fetch data from localstorage and add new item on front
         const cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        cart.unshift(productData);
+
+        //check if cartlist have item with the same variantId then just increse the quantity
+        const index = cart.findIndex((productData) => productData.variantId == variantId);
+
+        if (index != -1) cart[index].quantity += 1;
+        else cart.unshift(productData);
+
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCart();
 
         alert("Product added to cart");
     });
+
 });
 </script>

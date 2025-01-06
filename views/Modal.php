@@ -32,13 +32,13 @@ function updateCart() {
 
     // generate cart list view and append  in productlist container
     cartList.forEach(product => {
-        totalAmount += product.price;
+        totalAmount += product.price * product.quantity;
 
         const productItem = `
                 <li class="list-group-item py-3 px-0 border-top">
                     <div class="row align-items-center">
 
-                        <div class="col-10">
+                        <div class="col-5">
                             <h6 class="mb-0">${product.name}</h6>
                              <span><small class="text-muted">${product.variantName}</small></span>
                             <div class="mt-2 small">
@@ -47,8 +47,11 @@ function updateCart() {
                                 </button>
                             </div>
                         </div>
+                         <div class="col-3">
+                             <span class="fw-bold">${product.quantity}</span>
+                         </div>
                         <div class="col-2 text-end">
-                            <span class="fw-bold">${product.price}</span>
+                            <span class="fw-bold">${product.price * product.quantity}</span>
                         </div>
                     </div>
                 </li>
