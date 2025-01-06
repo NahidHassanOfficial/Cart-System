@@ -5,6 +5,10 @@
 ![Screenshot 2025-01-06 222351](https://github.com/user-attachments/assets/913766e3-37dd-4b06-872f-44f2f3e1b548)
 
 
+## Tech Stack:
+- **Backend**: `PHP`
+- **Frontend**: `jQuery`, `Bootstrap`
+- **Database**: `MySQL`
 
 ## Setup Instructions
 
