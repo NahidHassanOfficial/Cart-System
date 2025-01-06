@@ -1,3 +1,11 @@
+# Cart-System Coding Task
+
+## Screenshots
+![Screenshot 2025-01-06 222149](https://github.com/user-attachments/assets/15c71ca0-9609-47af-ac99-047e57c6bd01)
+![Screenshot 2025-01-06 222351](https://github.com/user-attachments/assets/913766e3-37dd-4b06-872f-44f2f3e1b548)
+
+
+
 ## Setup Instructions
 
 Follow these steps to set up and run the project on your localhost:
